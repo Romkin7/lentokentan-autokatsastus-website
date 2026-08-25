@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1700 1120" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="pinOuter" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2f6bf5"/>
+      <stop offset="55%" stop-color="#1449d6"/>
+      <stop offset="100%" stop-color="#0b1e4a"/>
+    </linearGradient>
+    <linearGradient id="pinInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#173a8a"/>
+      <stop offset="60%" stop-color="#0d2358"/>
+      <stop offset="100%" stop-color="#081536"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Map pin outer -->
+  <path d="M840,95
+           C 970,95 1065,190 1065,315
+           C 1065,410 990,470 840,660
+           C 690,470 615,410 615,315
+           C 615,190 710,95 840,95 Z"
+        fill="url(#pinOuter)"/>
+
+  <!-- Map pin inner circle -->
+  <circle cx="840" cy="320" r="185" fill="url(#pinInner)"/>
+
+  <!-- Car (front view), white -->
+  <g fill="#ffffff">
+    <path d="M735,270
+             C 742,240 760,225 800,222
+             L 880,222
+             C 920,225 938,240 945,270
+             L 965,300
+             C 985,305 992,315 992,335
+             L 992,400
+             C 992,415 985,422 970,422
+             L 955,422
+             C 950,440 935,452 918,452
+             C 900,452 886,440 882,422
+             L 798,422
+             C 794,440 780,452 762,452
+             C 745,452 730,440 725,422
+             L 710,422
+             C 695,422 688,415 688,400
+             L 688,335
+             C 688,315 695,305 715,300
+             Z"/>
+    <!-- windshield cut -->
+    <path d="M760,238 C 770,232 790,228 815,228 L 865,228 C 890,228 908,232 918,240 L 935,272 L 745,272 Z" fill="#0d2358"/>
+    <!-- side mirrors -->
+    <path d="M690,300 C 675,298 665,302 663,312 C 662,320 668,326 678,326 L 695,320 Z"/>
+    <path d="M990,300 C 1005,298 1015,302 1017,312 C 1018,320 1012,326 1002,326 L 985,320 Z"/>
+    <!-- grille slats -->
+    <path d="M735,340 L 800,336 L 800,352 L 735,356 Z" fill="#0d2358"/>
+    <path d="M885,336 L 950,340 L 950,356 L 885,352 Z" fill="#0d2358"/>
+    <!-- lower vents -->
+    <path d="M715,390 L 760,388 L 760,402 L 715,404 Z" fill="#0d2358"/>
+    <path d="M925,388 L 970,390 L 970,404 L 925,402 Z" fill="#0d2358"/>
+  </g>
+
+  <!-- Airplane silhouette + trail -->
+  <g fill="#0b1a40">
+    <path d="M1055,265
+             C 1010,255 900,205 848,192
+             L 828,178
+             C 862,175 902,175 935,180
+             C 968,150 1035,110 1085,92
+             C 1105,85 1128,84 1140,88
+             C 1132,105 1108,128 1082,148
+             C 1105,158 1140,178 1165,198
+             L 1150,205
+             C 1120,192 1085,180 1058,175
+             L 1035,192
+             C 1055,204 1085,224 1105,240
+             L 1090,248
+             C 1065,235 1038,222 1018,214
+             L 998,228
+             C 1015,236 1038,250 1055,262 Z"/>
+  </g>
+  <path d="M845,190 C 900,215 1000,250 1050,262" stroke="#ffffff" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.9"/>
+  <path d="M845,190 C 895,208 985,240 1035,255" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Brand text -->
+  <text x="840" y="800" text-anchor="middle" font-size="150" font-weight="800" fill="#0b1a40" letter-spacing="2">LENTOKENTÄN</text>
+
+  <!-- Subtitle with lines -->
+  <line x1="140" y1="950" x2="330" y2="950" stroke="#2f6bf5" stroke-width="10"/>
+  <text x="840" y="972" text-anchor="middle" font-size="70" font-weight="700" fill="#2f6bf5" letter-spacing="14">AUTOKATSASTUS</text>
+  <line x1="1350" y1="950" x2="1540" y2="950" stroke="#2f6bf5" stroke-width="10"/>
+</svg>
