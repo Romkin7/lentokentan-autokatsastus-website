@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { companyInfo } from '../companyInfo'
 import logo from '../assets/logo.svg'
 import './Navbar.css'
 
@@ -21,9 +22,14 @@ function Navbar() {
           <NavLink to="/yhteystiedot" className={({ isActive }) => (isActive ? 'active' : '')}>
             Yhteystiedot
           </NavLink>
-          <NavLink to="/varaa-aika" className="navbar-cta">
+          <a
+            href={companyInfo.bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="navbar-cta"
+          >
             Varaa aika
-          </NavLink>
+          </a>
         </nav>
       </div>
     </header>

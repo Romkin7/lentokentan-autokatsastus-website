@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { companyInfo } from '../companyInfo'
 import './Hero.css'
 
 function Hero() {
@@ -13,9 +14,14 @@ function Hero() {
           nopeasti.
         </p>
         <div className="hero-actions">
-          <Link to="/varaa-aika" className="btn btn-primary">
+          <a
+            href={companyInfo.bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+          >
             Varaa aika
-          </Link>
+          </a>
           <Link to="/yhteystiedot" className="btn btn-secondary">
             Yhteystiedot
           </Link>

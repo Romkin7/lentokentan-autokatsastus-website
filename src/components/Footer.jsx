@@ -31,6 +31,17 @@ function Footer() {
         </div>
 
         <div className="footer-col">
+          <h4>Aukioloajat</h4>
+          <ul className="footer-hours">
+            {companyInfo.openingHours.map(({ days, hours }) => (
+              <li key={days}>
+                {days}: {hours}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="footer-col">
           <h4>Toimipaikan osoite</h4>
           <p>
             {visitingAddress.street}
@@ -54,7 +65,22 @@ function Footer() {
             <Link to="/yhteystiedot">Yhteystiedot</Link>
           </p>
           <p>
-            <Link to="/varaa-aika">Varaa aika</Link>
+            <a
+              href={companyInfo.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Varaa aika
+            </a>
+          </p>
+          <p>
+            <Link to="/kayttoehdot">Käyttöehdot</Link>
+          </p>
+          <p>
+            <Link to="/tietosuojaseloste">Tietosuojaseloste</Link>
+          </p>
+          <p>
+            <Link to="/rekisteriseloste">Rekisteriseloste</Link>
           </p>
         </div>
       </div>

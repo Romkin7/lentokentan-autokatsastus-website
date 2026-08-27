@@ -91,7 +91,26 @@ function Home() {
           </div>
           <div className="info-card">
             <h2>Ajanvaraus</h2>
-            <p>Varaa katsastusaika helposti verkossa.</p>
+            <p>
+              <a
+                href={companyInfo.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Varaa katsastusaika helposti verkossa
+              </a>
+            </p>
+          </div>
+          <div className="info-card">
+            <h2>Aukioloajat</h2>
+            <ul className="hours-list">
+              {companyInfo.openingHours.map(({ days, hours }) => (
+                <li key={days}>
+                  <span>{days}</span>
+                  <span>{hours}</span>
+                </li>
+              ))}
+            </ul>
           </div>
           <div className="info-card">
             <h2>Puhelinnumero</h2>

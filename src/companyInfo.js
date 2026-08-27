@@ -13,6 +13,12 @@ export const companyInfo = {
     'Akkutestit ja kuntotarkastukset',
     'Rekisteröinti- ja maahantuontikatsastukset',
   ],
+  bookingUrl: 'https://ajanvaraus.idealinspect.fi/booking/138/675',
+  openingHours: [
+    { days: 'Maanantai - Perjantai', hours: '9:00-17:00' },
+    { days: 'Lauantai', hours: 'Suljettu' },
+    { days: 'Sunnuntai', hours: 'Suljettu' },
+  ],
   visitingAddress: {
     street: 'Kiitoradankuja 6',
     zip: '01530',

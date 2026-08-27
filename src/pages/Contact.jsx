@@ -33,6 +33,18 @@ function Contact() {
             </dd>
           </div>
           <div className="contact-row">
+            <dt>Aukioloajat</dt>
+            <dd>
+              <ul className="contact-services-list">
+                {companyInfo.openingHours.map(({ days, hours }) => (
+                  <li key={days}>
+                    {days}: {hours}
+                  </li>
+                ))}
+              </ul>
+            </dd>
+          </div>
+          <div className="contact-row">
             <dt>Palvelut</dt>
             <dd>
               <ul className="contact-services-list">
