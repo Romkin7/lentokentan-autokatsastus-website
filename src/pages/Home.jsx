@@ -7,7 +7,7 @@ const serviceIcons = [
   <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M10 38l5-14a6 6 0 0 1 5.7-4h22.6a6 6 0 0 1 5.7 4l5 14"
-      stroke="#1e4fd8"
+      stroke="#8b1538"
       strokeWidth="3"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -18,11 +18,11 @@ const serviceIcons = [
       width="48"
       height="14"
       rx="5"
-      stroke="#1e4fd8"
+      stroke="#8b1538"
       strokeWidth="3"
     />
-    <circle cx="19" cy="52" r="4" fill="#1e4fd8" />
-    <circle cx="45" cy="52" r="4" fill="#1e4fd8" />
+    <circle cx="19" cy="52" r="4" fill="#8b1538" />
+    <circle cx="45" cy="52" r="4" fill="#8b1538" />
     <path
       d="M24 44l5 5 11-11"
       stroke="#c8942f"
@@ -39,12 +39,12 @@ const serviceIcons = [
       width="40"
       height="26"
       rx="4"
-      stroke="#1e4fd8"
+      stroke="#8b1538"
       strokeWidth="3"
     />
-    <rect x="50" y="28" width="5" height="10" rx="1.5" fill="#1e4fd8" />
-    <path d="M20 20v-4h8v4" stroke="#1e4fd8" strokeWidth="3" />
-    <path d="M36 20v-4h8v4" stroke="#1e4fd8" strokeWidth="3" />
+    <rect x="50" y="28" width="5" height="10" rx="1.5" fill="#8b1538" />
+    <path d="M20 20v-4h8v4" stroke="#8b1538" strokeWidth="3" />
+    <path d="M36 20v-4h8v4" stroke="#8b1538" strokeWidth="3" />
     <path
       d="M28 26l-5 9h6l-3 9 10-11h-6l3-7z"
       fill="#c8942f"
@@ -54,12 +54,12 @@ const serviceIcons = [
   <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M16 8h24l8 8v40a2 2 0 0 1-2 2H16a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2z"
-      stroke="#1e4fd8"
+      stroke="#8b1538"
       strokeWidth="3"
       strokeLinejoin="round"
     />
-    <path d="M40 8v8h8" stroke="#1e4fd8" strokeWidth="3" strokeLinejoin="round" />
-    <path d="M20 30h20M20 38h20M20 46h12" stroke="#1e4fd8" strokeWidth="3" strokeLinecap="round" />
+    <path d="M40 8v8h8" stroke="#8b1538" strokeWidth="3" strokeLinejoin="round" />
+    <path d="M20 30h20M20 38h20M20 46h12" stroke="#8b1538" strokeWidth="3" strokeLinecap="round" />
     <circle cx="46" cy="46" r="9" fill="#c8942f" />
     <path
       d="M42.5 46l2.5 2.5 5-5"

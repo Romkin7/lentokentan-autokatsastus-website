@@ -19,7 +19,7 @@
 
 .info-card h2 {
   font-size: 1rem;
-  color: var(--color-primary);
+  color: var(--color-accent);
   margin-bottom: 0.5rem;
 }
 
@@ -63,7 +63,7 @@
 
 .services-section-inner h2 {
   font-size: 1rem;
-  color: var(--color-primary);
+  color: var(--color-accent);
   margin-bottom: 1.5rem;
 }
 

@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom'
 import { companyInfo } from '../companyInfo'
-import logo from '../assets/logo.svg'
 import './Navbar.css'
 
 function Navbar() {
@@ -9,7 +8,7 @@ function Navbar() {
       <div className="navbar-inner">
         <NavLink to="/" className="navbar-logo">
           <img
-            src={logo}
+            src="/logo-lentokentan-autokatsastus.png"
             alt="Lentokentän Autokatsastus Oy"
             className="navbar-logo-img"
           />

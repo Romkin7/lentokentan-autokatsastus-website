@@ -8,10 +8,18 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-inner">
-        <div className="footer-col">
+        <div className="footer-col footer-brand">
           <h3>{companyInfo.name}</h3>
           <p className="footer-tag">{companyInfo.locationType}</p>
           <p className="footer-industry">{companyInfo.industry}</p>
+          <a
+            href={companyInfo.bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-cta"
+          >
+            Varaa aika
+          </a>
         </div>
 
         <div className="footer-col">
@@ -35,58 +43,42 @@ function Footer() {
           <ul className="footer-hours">
             {companyInfo.openingHours.map(({ days, hours }) => (
               <li key={days}>
-                {days}: {hours}
+                <span>{days}</span>
+                <span>{hours}</span>
               </li>
             ))}
           </ul>
         </div>
 
         <div className="footer-col">
-          <h4>Toimipaikan osoite</h4>
+          <h4>Osoitteet</h4>
+          <p className="footer-label">Toimipaikka</p>
           <p>
             {visitingAddress.street}
             <br />
             {visitingAddress.zip} {visitingAddress.city}
           </p>
-        </div>
-
-        <div className="footer-col">
-          <h4>Postiosoite</h4>
+          <p className="footer-label">Postiosoite</p>
           <p>
             {postalAddress.street}
             <br />
             {postalAddress.zip} {postalAddress.city}
           </p>
         </div>
-
-        <div className="footer-col">
-          <h4>Linkit</h4>
-          <p>
-            <Link to="/yhteystiedot">Yhteystiedot</Link>
-          </p>
-          <p>
-            <a
-              href={companyInfo.bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Varaa aika
-            </a>
-          </p>
-          <p>
-            <Link to="/kayttoehdot">Käyttöehdot</Link>
-          </p>
-          <p>
-            <Link to="/tietosuojaseloste">Tietosuojaseloste</Link>
-          </p>
-          <p>
-            <Link to="/rekisteriseloste">Rekisteriseloste</Link>
-          </p>
-        </div>
       </div>
 
       <div className="footer-bottom">
-        &copy; {new Date().getFullYear()} {companyInfo.name}
+        <div className="footer-bottom-inner">
+          <p>
+            &copy; {new Date().getFullYear()} {companyInfo.name}
+          </p>
+          <nav className="footer-legal">
+            <Link to="/yhteystiedot">Yhteystiedot</Link>
+            <Link to="/kayttoehdot">Käyttöehdot</Link>
+            <Link to="/tietosuojaseloste">Tietosuojaseloste</Link>
+            <Link to="/rekisteriseloste">Rekisteriseloste</Link>
+          </nav>
+        </div>
       </div>
     </footer>
   )

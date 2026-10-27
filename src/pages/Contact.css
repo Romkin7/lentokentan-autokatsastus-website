@@ -12,7 +12,7 @@
   letter-spacing: 0.08em;
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-accent);
   margin-bottom: 0.5rem;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .contact-row dd a {
-  color: var(--color-primary);
+  color: var(--color-accent);
   text-decoration: none;
 }
 
